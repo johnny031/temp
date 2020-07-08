@@ -35,7 +35,7 @@
 #background_top {
   position: relative;
   top: -20px;
-  background-image: url("/assets/img/test.png");
+  background-image: url("{{ site.baseurl }}/../../img/test.png");
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center;
