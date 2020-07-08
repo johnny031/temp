@@ -89,17 +89,27 @@ footer {
     width: 90%;
     margin: 10px auto;
     padding: 10px 0; }
-  #home li {
-    font-family: "GenSenRounded"; }
-    #home li .excerpt {
-      color: gray; }
-    #home li a {
-      color: black;
-      text-decoration: none;
-      transition: all 0.3s ease; }
-    #home li a:hover {
-      color: #1a6584; }
+  #home ul {
+    padding: 0 25px 0 40px; }
+    #home ul li {
+      font-family: "GenSenRounded"; }
+      #home ul li .excerpt {
+        color: gray; }
+      #home ul li a {
+        color: black;
+        text-decoration: none;
+        transition: all 0.3s ease; }
+      #home ul li a:hover {
+        color: #1a6584; }
   #home .border {
     padding: 5px 0;
     box-shadow: 2px 2px 2px #777777;
     background-color: whitesmoke; }
+
+@media only screen and (max-width: 475px) {
+  #home .row {
+    padding: 0; }
+  #home .col-md-6 {
+    padding: 0 0 30px 0; }
+  #home ul {
+    padding: 0 25px 0 40px; } }
