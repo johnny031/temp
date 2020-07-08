@@ -1,0 +1,105 @@
+@font-face {
+  font-family: "Armor Mincho";
+  src: url("../../fonts/Armor_Mincho/SoukouMincho.woff") format("woff"), url("../../fonts/Armor_Mincho/SoukouMincho.ttf") format("truetype"), url("../../fonts/Armor_Mincho/SoukouMincho.eot") format("embedded-opentype"); }
+@font-face {
+  font-family: "GenSenRounded";
+  src: url("../../fonts/GenSenRounded/GenSenRoundedTW-R.woff") format("woff"), url("../../fonts/GenSenRounded/GenSenRoundedTW-R.ttf") format("truetype"), url("../../fonts/GenSenRounded/GenSenRoundedTW-R.eot") format("embedded-opentype"); }
+.navbar {
+  padding: 15px 0;
+  margin-bottom: -1px !important;
+  transition: all 1s ease !important;
+  background-color: transparent; }
+  .navbar .navbar-brand {
+    padding: 5px; }
+  .navbar .logo_sm {
+    display: none; }
+  .navbar a {
+    color: whitesmoke;
+    font-family: "GenSenRounded";
+    font-weight: 100; }
+  .navbar .icon-bar {
+    background-color: white; }
+  .navbar a {
+    transition: all 0.3s ease; }
+  .navbar .dropdown-menu {
+    background-color: #1176b1; }
+    .navbar .dropdown-menu a {
+      color: whitesmoke; }
+
+.nav_white {
+  background-color: #316588;
+  opacity: 1;
+  box-shadow: 3px 3px 3px #174c6e;
+  transition: all 1s ease !important; }
+
+#background_top {
+  position: relative;
+  top: -20px;
+  background-image: url("/assets/img/test.png");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  height: 600px; }
+
+#slogan {
+  font-family: "Armor Mincho";
+  font-size: 40px;
+  color: white; }
+  #slogan #first_line {
+    position: absolute;
+    left: 30vw;
+    top: 45%; }
+  #slogan #second_line {
+    position: absolute;
+    left: 50vw;
+    top: 55%; }
+
+footer {
+  background-color: #c4c4c4;
+  padding: 20px; }
+  footer h4 {
+    font-family: "GenSenRounded"; }
+
+@media only screen and (max-width: 992px) {
+  #slogan #first_line {
+    left: 25vw; }
+  #slogan #second_line {
+    left: 45vw; } }
+@media only screen and (max-width: 475px) {
+  #slogan {
+    font-size: 30px; }
+    #slogan #first_line {
+      left: 15vw; }
+    #slogan #second_line {
+      left: 35vw; } }
+@media only screen and (max-width: 400px) {
+  .logo_sm {
+    display: block !important;
+    padding-left: 10px; }
+
+  .logo {
+    display: none !important; } }
+#home {
+  padding: 0 0 50px 0; }
+  #home h1 {
+    font-family: "Armor Mincho";
+    font-weight: bold;
+    color: #1a6584;
+    border-bottom: 2px solid #1a6584;
+    width: 90%;
+    margin: 10px auto;
+    padding: 10px 0; }
+  #home li {
+    font-family: "GenSenRounded"; }
+    #home li .excerpt {
+      color: gray; }
+    #home li a {
+      color: black;
+      text-decoration: none;
+      transition: all 0.3s ease; }
+    #home li a:hover {
+      color: #1a6584; }
+  #home .border {
+    padding: 5px 0;
+    box-shadow: 2px 2px 2px #777777;
+    background-color: whitesmoke; }

@@ -1,0 +1,31 @@
+#home {
+  padding: 0 0 50px 0;
+  h1 {
+    font-family: "Armor Mincho";
+    font-weight: bold;
+    color: #1a6584;
+    border-bottom: 2px solid #1a6584;
+    width: 90%;
+    margin: 10px auto;
+    padding: 10px 0;
+  }
+  li {
+    font-family: "GenSenRounded";
+    .excerpt {
+      color: gray;
+    }
+    a {
+      color: black;
+      text-decoration: none;
+      transition: all 0.3s ease;
+    }
+    a:hover {
+      color: #1a6584;
+    }
+  }
+  .border {
+    padding: 5px 0;
+    box-shadow: 2px 2px 2px rgb(119, 119, 119);
+    background-color: whitesmoke;
+  }
+}
