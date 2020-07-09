@@ -109,7 +109,55 @@ footer {
     padding: 5px 0;
     box-shadow: 2px 2px 2px #777777;
     background-color: whitesmoke; }
+  #home h4 {
+    text-align: right;
+    font-family: "GenSenRounded";
+    padding-right: 30px; }
+    #home h4 a {
+      text-decoration: none; }
 
 @media only screen and (max-width: 767px) {
   #home .col-sm-6 {
     padding: 0 0 40px 0; } }
+.posts {
+  padding-bottom: 40px; }
+  .posts h1,
+  .posts p {
+    font-family: "Microsoft JhengHei"; }
+  .posts h1 {
+    color: #316588; }
+  .posts .content {
+    font-size: 25px; }
+
+#news {
+  padding-bottom: 50px; }
+  #news h1 {
+    font-family: "Armor Mincho";
+    color: #1a6584;
+    font-weight: bold;
+    border-bottom: 2px solid #1a6584;
+    width: 70%;
+    margin: 20px auto;
+    padding: 10px 0; }
+  #news table,
+  #news th,
+  #news td {
+    border: 1px solid gray;
+    border-collapse: collapse; }
+  #news table {
+    font-family: "Microsoft JhengHei";
+    margin: 0 auto;
+    font-size: 20px;
+    width: 80vw; }
+  #news .title_td,
+  #news th {
+    padding: 5px 10px; }
+  #news th {
+    background-color: #e0e0e0;
+    text-align: center; }
+  #news a {
+    color: #155c7a;
+    text-decoration: none;
+    transition: all 0.4s ease; }
+  #news a:hover {
+    color: #499faa; }

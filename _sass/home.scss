@@ -36,6 +36,14 @@
     box-shadow: 2px 2px 2px rgb(119, 119, 119);
     background-color: whitesmoke;
   }
+  h4 {
+    text-align: right;
+    font-family: "GenSenRounded";
+    padding-right: 30px;
+    a {
+      text-decoration: none;
+    }
+  }
 }
 @media only screen and (max-width: 767px) {
   #home {

@@ -1,0 +1,25 @@
+---
+layout: default
+---
+
+<div id="news" class="container-fluid">
+  <h1 class="text-center">最新消息</h1>
+  <div class="news_table">
+    <table>
+      <tr>
+        <th>類別</th>
+        <th>日期</th>
+        <th>標題</th>
+      </tr>
+      {% for post in site.posts %}
+      <tr>
+        <td class="text-center author_td">{{ post.author }}</td>
+        <td class="text-center date_td">{{ post.date | date: "%Y-%m-%d" }}</td>
+        <td class="title_td">
+          <a href="{{ site.baseurl }}{{ post.url }}">{{ post.title }}</a>
+        </td>
+      </tr>
+      {% endfor %}
+    </table>
+  </div>
+</div>
