@@ -1,8 +1,8 @@
 function add_nav_white() {
-  $("nav").addClass("nav_white");
+  $(".navbar").addClass("nav_white");
 }
 function rm_nav_white() {
-  $("nav").removeClass("nav_white");
+  $(".navbar").removeClass("nav_white");
 }
 
 $(document).ready(function () {

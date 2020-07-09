@@ -20,7 +20,8 @@
         <span id="second_line">全心零距離</span>
       </h2>
     </div>
-    {{ content }}
+    {% include breadcrumbs.html omit_date=true omit_collection=true %} {{
+    content }}
     <footer>
       <div class="container">
         <div class="row">

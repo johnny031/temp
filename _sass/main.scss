@@ -57,6 +57,20 @@
     top: 55%;
   }
 }
+#breadcrumb {
+  font-family: "Microsoft JhengHei";
+  color: rgb(148, 148, 148);
+  font-size: 13px;
+  padding: 0 25px 25px 20px;
+  a {
+    text-decoration: none;
+    color: rgb(89, 138, 155);
+    transition: all 0.2s ease;
+  }
+  a:hover {
+    color: rgb(130, 179, 196);
+  }
+}
 footer {
   background-color: rgb(196, 196, 196);
   padding: 20px;

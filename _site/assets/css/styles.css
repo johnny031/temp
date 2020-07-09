@@ -54,6 +54,18 @@
     left: 50vw;
     top: 55%; }
 
+#breadcrumb {
+  font-family: "Microsoft JhengHei";
+  color: #949494;
+  font-size: 13px;
+  padding: 0 25px 25px 20px; }
+  #breadcrumb a {
+    text-decoration: none;
+    color: #598a9b;
+    transition: all 0.2s ease; }
+  #breadcrumb a:hover {
+    color: #82b3c4; }
+
 footer {
   background-color: #c4c4c4;
   padding: 20px; }
