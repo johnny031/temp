@@ -20,6 +20,15 @@ $(document).ready(function () {
     let time = $(window).width() < 768 ? 0 : 250;
     $(this).find(".dropdown-menu").first().stop(true, true).slideUp(time);
   });
+  //change nav background color on click when collapsed
+  $(".navbar-toggle").on("click", function () {
+    let expand = $(".navbar-toggle").attr("aria-expanded");
+    if (expand === "false") {
+      $(".navbar").css("background-color", "#316588");
+    } else {
+      $(".navbar").css("background-color", "transparent");
+    }
+  });
 });
 $(window).scroll(function () {
   let scroll = $(window).scrollTop();

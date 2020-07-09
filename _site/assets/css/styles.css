@@ -27,7 +27,7 @@
       color: whitesmoke; }
 
 .nav_white {
-  background-color: #316588;
+  background-color: #316588 !important;
   opacity: 1;
   box-shadow: 3px 3px 3px #174c6e;
   transition: all 1s ease !important; }
@@ -110,8 +110,6 @@ footer {
     box-shadow: 2px 2px 2px #777777;
     background-color: whitesmoke; }
 
-@media only screen and (max-width: 475px) {
-  #home .col-md-6 {
-    padding: 0 0 30px 0; }
-  #home ul {
-    padding: 0 25px 0 40px; } }
+@media only screen and (max-width: 767px) {
+  #home .col-sm-6 {
+    padding: 0 0 40px 0; } }
