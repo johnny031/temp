@@ -125,10 +125,16 @@ footer {
   .posts p {
     font-family: "Microsoft JhengHei"; }
   .posts h1 {
+    font-size: 30px;
     color: #316588; }
   .posts .content {
-    font-size: 25px; }
+    font-size: 20px; }
 
+@media only screen and (max-width: 930px) {
+  .posts h1 {
+    font-size: 25px; }
+  .posts .content {
+    font-size: 17px; } }
 #news {
   padding-bottom: 50px; }
   #news h1 {
@@ -149,9 +155,14 @@ footer {
     margin: 0 auto;
     font-size: 20px;
     width: 80vw; }
-  #news .title_td,
   #news th {
     padding: 5px 10px; }
+  #news td {
+    padding: 3px; }
+  #news .author_td,
+  #news .date_td {
+    vertical-align: top;
+    white-space: nowrap; }
   #news th {
     background-color: #e0e0e0;
     text-align: center; }
@@ -161,3 +172,12 @@ footer {
     transition: all 0.4s ease; }
   #news a:hover {
     color: #499faa; }
+
+@media only screen and (max-width: 930px) {
+  #news {
+    padding: 0 0 50px 0; }
+    #news table {
+      font-size: 15px;
+      width: 95vw; }
+    #news td {
+      padding: 5px; } }
