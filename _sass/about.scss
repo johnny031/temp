@@ -1,0 +1,69 @@
+#about {
+  padding-bottom: 30px;
+  h1 {
+    color: #1a6584;
+    font-family: "Armor Mincho";
+  }
+  .intro {
+    color: rgb(110, 110, 110);
+    font-size: 18px;
+    font-family: "GenSenRounded";
+    margin: 0 17vw;
+    line-height: 35px;
+  }
+  .row {
+    padding: 50px 15vw;
+    img {
+      width: 40%;
+    }
+    a {
+      text-decoration: none;
+      transition: all 0.3s ease;
+      h4 {
+        color: #1a6584;
+        font-family: "GenSenRounded";
+        transition: all 0.3s ease;
+      }
+    }
+    a:hover {
+      opacity: 0.6;
+      h4 {
+        color: #65a5c0;
+      }
+    }
+  }
+}
+@media only screen and (max-width: 992px) {
+  #about {
+    .intro {
+      margin: 0 5vw;
+    }
+    .row {
+      padding: 50px 3vw;
+    }
+  }
+}
+@media only screen and (max-width: 500px) {
+  #about {
+    h1 {
+      font-size: 30px;
+    }
+    .general-heading-line {
+      margin: 20px auto 30px;
+    }
+    .intro {
+      font-size: 15px;
+      line-height: 28px;
+      margin: 0 5px;
+    }
+    .row {
+      padding: 40px 5px 20px 5px;
+      img {
+        width: 70%;
+      }
+      h4 {
+        font-size: 15px;
+      }
+    }
+  }
+}

@@ -29,6 +29,13 @@ $(document).ready(function () {
       $(".navbar").css("background-color", "transparent");
     }
   });
+  //translate breadcrumb text
+  let $route = $("#breadcrumb .route");
+  $route.html() === "about" ? $route.html("關於我們") : $route.html("最新消息");
+  //hide breadcrumb at home page
+  if (window.location.pathname == "/") {
+    $("#breadcrumb").hide();
+  }
 });
 $(window).scroll(function () {
   let scroll = $(window).scrollTop();

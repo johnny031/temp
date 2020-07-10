@@ -20,12 +20,6 @@
   a {
     transition: all 0.3s ease;
   }
-  .dropdown-menu {
-    background-color: #1176b1;
-    a {
-      color: whitesmoke;
-    }
-  }
 }
 .nav_white {
   background-color: #316588 !important;
@@ -36,7 +30,7 @@
 #background_top {
   position: relative;
   top: -20px;
-  background-image: url("{{ site.baseurl }}/../../img/test_sm.png");
+  background-image: url("{{ site.baseurl }}/../../img/test.svg");
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center;
@@ -49,19 +43,19 @@
   #first_line {
     position: absolute;
     left: 30vw;
-    top: 45%;
+    top: 48%;
   }
   #second_line {
     position: absolute;
     left: 50vw;
-    top: 55%;
+    top: 58%;
   }
 }
 #breadcrumb {
   font-family: "Microsoft JhengHei";
   color: rgb(148, 148, 148);
   font-size: 13px;
-  padding: 0 25px 25px 20px;
+  padding: 10px 25px 25px 20px;
   a {
     text-decoration: none;
     color: rgb(89, 138, 155);
@@ -77,6 +71,13 @@ footer {
   h4 {
     font-family: "GenSenRounded";
   }
+}
+.general-heading-line {
+  background-color: #1a6584;
+  height: 4px;
+  line-height: 0;
+  width: 48px;
+  margin: 20px auto 45px;
 }
 @media only screen and (max-width: 992px) {
   #slogan {

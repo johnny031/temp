@@ -1,0 +1,9 @@
+- name: 章程
+  link: /#
+  src: /assets/img/charter_logo.svg
+- name: 組織架構
+  link: /about/organization.html
+  src: /assets/img/organization_logo.svg
+- name: 歷屆理監事
+  link: /about/members.html
+  src: /assets/img/clock_logo.svg

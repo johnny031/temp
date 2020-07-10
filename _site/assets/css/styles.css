@@ -21,10 +21,6 @@
     background-color: white; }
   .navbar a {
     transition: all 0.3s ease; }
-  .navbar .dropdown-menu {
-    background-color: #1176b1; }
-    .navbar .dropdown-menu a {
-      color: whitesmoke; }
 
 .nav_white {
   background-color: #316588 !important;
@@ -35,7 +31,7 @@
 #background_top {
   position: relative;
   top: -20px;
-  background-image: url("{{ site.baseurl }}/../../img/test_sm.png");
+  background-image: url("{{ site.baseurl }}/../../img/test.svg");
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center;
@@ -48,17 +44,17 @@
   #slogan #first_line {
     position: absolute;
     left: 30vw;
-    top: 45%; }
+    top: 48%; }
   #slogan #second_line {
     position: absolute;
     left: 50vw;
-    top: 55%; }
+    top: 58%; }
 
 #breadcrumb {
   font-family: "Microsoft JhengHei";
   color: #949494;
   font-size: 13px;
-  padding: 0 25px 25px 20px; }
+  padding: 10px 25px 25px 20px; }
   #breadcrumb a {
     text-decoration: none;
     color: #598a9b;
@@ -71,6 +67,13 @@ footer {
   padding: 20px; }
   footer h4 {
     font-family: "GenSenRounded"; }
+
+.general-heading-line {
+  background-color: #1a6584;
+  height: 4px;
+  line-height: 0;
+  width: 48px;
+  margin: 20px auto 45px; }
 
 @media only screen and (max-width: 992px) {
   #slogan #first_line {
@@ -193,3 +196,50 @@ footer {
       width: 95vw; }
     #news td {
       padding: 5px; } }
+#about {
+  padding-bottom: 30px; }
+  #about h1 {
+    color: #1a6584;
+    font-family: "Armor Mincho"; }
+  #about .intro {
+    color: #6e6e6e;
+    font-size: 18px;
+    font-family: "GenSenRounded";
+    margin: 0 17vw;
+    line-height: 35px; }
+  #about .row {
+    padding: 50px 15vw; }
+    #about .row img {
+      width: 40%; }
+    #about .row a {
+      text-decoration: none;
+      transition: all 0.3s ease; }
+      #about .row a h4 {
+        color: #1a6584;
+        font-family: "GenSenRounded";
+        transition: all 0.3s ease; }
+    #about .row a:hover {
+      opacity: 0.6; }
+      #about .row a:hover h4 {
+        color: #65a5c0; }
+
+@media only screen and (max-width: 992px) {
+  #about .intro {
+    margin: 0 5vw; }
+  #about .row {
+    padding: 50px 3vw; } }
+@media only screen and (max-width: 500px) {
+  #about h1 {
+    font-size: 30px; }
+  #about .general-heading-line {
+    margin: 20px auto 30px; }
+  #about .intro {
+    font-size: 15px;
+    line-height: 28px;
+    margin: 0 5px; }
+  #about .row {
+    padding: 40px 5px 20px 5px; }
+    #about .row img {
+      width: 70%; }
+    #about .row h4 {
+      font-size: 15px; } }
