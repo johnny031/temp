@@ -249,21 +249,27 @@ footer {
   #members h1 {
     color: #1a6584;
     font-family: "Armor Mincho"; }
-  #members .row {
-    display: flex;
-    justify-content: center; }
   #members .member {
     margin: 0 auto;
     background-position: center;
     background-size: cover;
     box-shadow: 5px 5px 8px #919191;
-    width: 170px;
-    height: 200px; }
+    width: 175px;
+    height: 205px; }
+  #members #container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center; }
+  #members .item {
+    padding: 0 50px; }
   #members h4 {
     color: #636363;
     margin: 40px 0 50px 0;
     font-family: "GenSenRounded"; }
 
-@media only screen and (max-width: 767px) {
-  .row {
-    display: block !important; } }
+@media only screen and (max-width: 1316px) {
+  #members {
+    width: 85vw; } }
+@media only screen and (max-width: 1011px) {
+  #members {
+    width: 96vw; } }

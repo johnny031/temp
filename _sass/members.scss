@@ -5,17 +5,21 @@
     color: #1a6584;
     font-family: "Armor Mincho";
   }
-  .row {
-    display: flex;
-    justify-content: center;
-  }
   .member {
     margin: 0 auto;
     background-position: center;
     background-size: cover;
     box-shadow: 5px 5px 8px rgb(145, 145, 145);
-    width: 170px;
-    height: 200px;
+    width: 175px;
+    height: 205px;
+  }
+  #container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+  .item {
+    padding: 0 50px;
   }
   h4 {
     color: rgb(99, 99, 99);
@@ -23,8 +27,13 @@
     font-family: "GenSenRounded";
   }
 }
-@media only screen and (max-width: 767px) {
-  .row {
-    display: block !important;
+@media only screen and (max-width: 1316px) {
+  #members {
+    width: 85vw;
+  }
+}
+@media only screen and (max-width: 1011px) {
+  #members {
+    width: 96vw;
   }
 }

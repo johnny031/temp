@@ -5,9 +5,9 @@ title: 歷屆理監事
 <div id="members" class="container text-center">
   <h1>理事</h1>
   <p class="general-heading-line"></p>
-  <div class="directors_list">
+  <div id="container">
     {% for member in site.data.members.session1.directors %}
-    <div class="col-md-4 col-sm-6">
+    <div class="item">
       <div
         class="member"
         style="background-image: url('{{ site.baseurl }}/assets/img/members/session1/director{{ forloop.index }}.jpg');"
@@ -18,9 +18,9 @@ title: 歷屆理監事
   </div>
   <h1>監事</h1>
   <p class="general-heading-line"></p>
-  <div class="supervisors_list">
+  <div id="container">
     {% for member in site.data.members.session1.supervisors %}
-    <div class="col-md-4 col-sm-6">
+    <div class="item">
       <div
         class="member"
         style="background-image: url('{{ site.baseurl }}/assets/img/members/session1/supervisor{{ forloop.index }}.jpg');"
@@ -31,9 +31,9 @@ title: 歷屆理監事
   </div>
   <h1>秘書</h1>
   <p class="general-heading-line"></p>
-  <div class="secretaries_list">
+  <div id="container">
     {% for member in site.data.members.session1.secretaries %}
-    <div class="col-md-4 col-sm-6">
+    <div class="item">
       <div
         class="member"
         style="background-image: url('{{ site.baseurl }}/assets/img/members/session1/secretary{{ forloop.index }}.jpg');"
