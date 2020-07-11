@@ -1,0 +1,29 @@
+directors:
+  - name: 蘇炫榮
+    position: 理事長
+  - name: 王蒞君
+    position: 常務理事
+  - name: 李志鵬
+    position: 常務理事
+  - name: 魏宏宇
+    position: 理事
+  - name: 洪樂文
+    position: 理事
+  - name: 李佳翰
+    position: 理事
+  - name: 吳仁銘
+    position: 理事
+  - name: 謝欣霖
+    position: 理事
+  - name: 陳懷恩
+    position: 理事
+supervisors:
+  - name: 林澤
+    position: 常務監事
+  - name: 蘇柏青
+    position: 監事
+  - name: 王志宇
+    position: 監事
+secretaries:
+  - name: 林士駿
+    position: 秘書長

@@ -13,7 +13,11 @@ title: 關於我們
   <div class="row">
     {% for item in site.data.about %}
     <div class="col-xs-4">
-      <a href="{{ site.baseurl }}{{ item.link }}">
+      <a
+        target="{{ item.target }}"
+        rel="noopener noreferrer"
+        href="{{ site.baseurl }}{{ item.link }}"
+      >
         <img src="{{ site.baseurl }}{{ item.src }}" />
         <h4>{{ item.name }}</h4>
       </a>

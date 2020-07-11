@@ -1,5 +1,6 @@
 - name: 章程
-  link: /#
+  target: _blank
+  link: /assets/file/charter.pdf
   src: /assets/img/charter_logo.svg
 - name: 組織架構
   link: /about/organization.html

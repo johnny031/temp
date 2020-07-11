@@ -2,4 +2,44 @@
 title: 歷屆理監事
 ---
 
-<h1>歷屆理監事</h1>
+<div id="members" class="container text-center">
+  <h1>理事</h1>
+  <p class="general-heading-line"></p>
+  <div class="directors_list">
+    {% for member in site.data.members.session1.directors %}
+    <div class="col-md-4 col-sm-6">
+      <div
+        class="member"
+        style="background-image: url('{{ site.baseurl }}/assets/img/members/session1/director{{ forloop.index }}.jpg');"
+      ></div>
+      <h4>{{ member.position }} / {{ member.name }}</h4>
+    </div>
+    {% endfor %}
+  </div>
+  <h1>監事</h1>
+  <p class="general-heading-line"></p>
+  <div class="supervisors_list">
+    {% for member in site.data.members.session1.supervisors %}
+    <div class="col-md-4 col-sm-6">
+      <div
+        class="member"
+        style="background-image: url('{{ site.baseurl }}/assets/img/members/session1/supervisor{{ forloop.index }}.jpg');"
+      ></div>
+      <h4>{{ member.position }} / {{ member.name }}</h4>
+    </div>
+    {% endfor %}
+  </div>
+  <h1>秘書</h1>
+  <p class="general-heading-line"></p>
+  <div class="secretaries_list">
+    {% for member in site.data.members.session1.secretaries %}
+    <div class="col-md-4 col-sm-6">
+      <div
+        class="member"
+        style="background-image: url('{{ site.baseurl }}/assets/img/members/session1/secretary{{ forloop.index }}.jpg');"
+      ></div>
+      <h4>{{ member.position }} / {{ member.name }}</h4>
+    </div>
+    {% endfor %}
+  </div>
+</div>

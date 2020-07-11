@@ -36,6 +36,20 @@ $(document).ready(function () {
   if (window.location.pathname == "/") {
     $("#breadcrumb").hide();
   }
+  //wrap members in rows
+  let $set1 = $(".directors_list").children();
+  let $set2 = $(".supervisors_list").children();
+  let $set3 = $(".secretaries_list").children();
+  let col_num = $(window).width() < 992 ? 2 : 3;
+  for (let i = 0, len = $set1.length; i < len; i += col_num) {
+    $set1.slice(i, i + col_num).wrapAll('<div class="row"></div>');
+  }
+  for (let i = 0, len = $set2.length; i < len; i += col_num) {
+    $set2.slice(i, i + col_num).wrapAll('<div class="row"></div>');
+  }
+  for (let i = 0, len = $set3.length; i < len; i += col_num) {
+    $set3.slice(i, i + col_num).wrapAll('<div class="row"></div>');
+  }
 });
 $(window).scroll(function () {
   let scroll = $(window).scrollTop();
