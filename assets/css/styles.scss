@@ -3,16 +3,16 @@
 
 @font-face {
   font-family: "Armor Mincho";
-  src: url("../../fonts/Armor_Mincho/SoukouMincho.woff") format("woff"),
-    url("../../fonts/Armor_Mincho/SoukouMincho.ttf") format("truetype"),
-    url("../../fonts/Armor_Mincho/SoukouMincho.eot") format("embedded-opentype");
+  src: url("../../fonts/Armor_Mincho/SoukouMincho.woff") format("woff");
+  // url("../../fonts/Armor_Mincho/SoukouMincho.ttf") format("truetype"),
+  // url("../../fonts/Armor_Mincho/SoukouMincho.eot") format("embedded-opentype");
 }
 @font-face {
   font-family: "GenSenRounded";
-  src: url("../../fonts/GenSenRounded/GenSenRoundedTW-R.woff") format("woff"),
-    url("../../fonts/GenSenRounded/GenSenRoundedTW-R.ttf") format("truetype"),
-    url("../../fonts/GenSenRounded/GenSenRoundedTW-R.eot")
-      format("embedded-opentype");
+  src: url("../../fonts/GenSenRounded/GenSenRoundedTW-R.woff") format("woff");
+  // url("../../fonts/GenSenRounded/GenSenRoundedTW-R.ttf") format("truetype"),
+  // url("../../fonts/GenSenRounded/GenSenRoundedTW-R.eot")
+  //   format("embedded-opentype");
 }
 @import "main";
 @import "home";
