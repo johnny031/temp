@@ -4,8 +4,8 @@ function add_nav_white() {
 function rm_nav_white() {
   $(".navbar").removeClass("nav_white");
 }
-
 $(document).ready(function () {
+  $("#background_top").animate({ opacity: 1 }, 1000);
   let scroll = $(window).scrollTop();
   if (scroll > 0) {
     add_nav_white();
