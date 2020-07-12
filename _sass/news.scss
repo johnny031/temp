@@ -26,6 +26,14 @@
   }
   td {
     padding: 3px;
+    a {
+      color: #155c7a;
+      text-decoration: none;
+      transition: all 0.4s ease;
+    }
+    a:hover {
+      color: #499faa;
+    }
   }
   .author_td,
   .date_td {
@@ -36,13 +44,36 @@
     background-color: rgb(224, 224, 224);
     text-align: center;
   }
-  a {
-    color: #155c7a;
-    text-decoration: none;
-    transition: all 0.4s ease;
-  }
-  a:hover {
-    color: #499faa;
+  .pagination {
+    margin-top: 30px;
+    display: flex;
+    justify-content: center;
+    #current,
+    span,
+    a {
+      color: black;
+      width: 30px;
+      height: 30px;
+      font-size: 20px;
+      font-family: "Microsoft JhengHei";
+      padding: 0 10px;
+      margin: 0 10px;
+      border-radius: 50%;
+    }
+    #current {
+      color: white;
+      font-weight: bold;
+      background-color: #3690b6;
+    }
+    a {
+      text-decoration: none;
+      transition: all 0.2s ease;
+    }
+    a:hover {
+      font-weight: bold;
+      color: white;
+      background-color: #98cde4;
+    }
   }
 }
 @media only screen and (max-width: 930px) {

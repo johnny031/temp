@@ -1,3 +1,7 @@
+collections:
+  anouncements:
+    output: true
+
 defaults:
   - scope:
       path: ""
@@ -8,3 +12,17 @@ defaults:
       path: ""
     values:
       layout: "default"
+  - scope:
+      path: "_anouncements/"
+      type: "anouncements"
+    values:
+      layout: "post"
+
+plugins:
+  - jekyll-feed
+  - jekyll-sitemap
+  - jekyll-seo-tag
+  - jekyll-paginate
+
+paginate: 2
+paginate_path: "/news/page:num/"

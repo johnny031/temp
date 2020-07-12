@@ -25,15 +25,20 @@
       <h1 class="text-center">公告</h1>
       <div class="border">
         <ul>
-          {% for post in site.posts limit:3 %}
+          {% for anouncement in site.anouncements limit:3 %}
           <li>
             <h3>
-              <a href="{{ site.baseurl }}{{ post.url }}">{{ post.title }}</a>
+              <a href="{{ site.baseurl }}{{ anouncement.url }}"
+                >{{ anouncement.title }}</a
+              >
             </h3>
-            <span class="excerpt">{{ post.excerpt }}</span>
+            <span class="excerpt">{{ anouncement.excerpt }}</span>
           </li>
           {% endfor %}
         </ul>
+        <h4>
+          <a href="{{ site.baseurl }}/anouncements/">>>更多資訊</a>
+        </h4>
       </div>
     </div>
   </div>

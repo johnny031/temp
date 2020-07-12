@@ -12,7 +12,9 @@ index.html {% endcomment %} {% assign categories = categories | pop %} {% endif
   {% assign route = route | append: '/' | append: category %} {% if forloop.last
   %} {% if include.title %}{{include.title}}{% else %}{{ category }}{% endif %}
   {% else %}
-  <a class="route" href="{{ site.baseurl }}{{ route | absolute_url }}"
+  <a
+    class="route"
+    href="{{ site.baseurl }}{{ route | remove: '_' | absolute_url }}"
     >{{ category }}</a
   >
   {% endif %} {% endfor %}

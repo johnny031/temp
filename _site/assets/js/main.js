@@ -23,7 +23,11 @@ $(document).ready(function () {
   });
   //translate breadcrumb text
   let $route = $("#breadcrumb .route");
-  $route.html() === "about" ? $route.html("關於我們") : $route.html("最新消息");
+  $route.html() === "about"
+    ? $route.html("關於我們")
+    : $route.html() === "news"
+    ? $route.html("最新消息")
+    : $route.html("公告");
   //hide breadcrumb at home page
   if (window.location.pathname == "/") {
     $("#breadcrumb").hide();
