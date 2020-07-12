@@ -6,9 +6,10 @@
     width: 100%;
   }
   h1 {
-    font-family: "cwTeXFangSong", serif !important;
+    font-family: "Microsoft JhengHei";
     font-weight: bold;
     color: #1a6584;
+    text-shadow: 1px 1px 1px #0e3f53;
     border-bottom: 2px solid #1a6584;
     width: 90%;
     margin: 10px auto;
@@ -19,10 +20,13 @@
     li {
       font-family: "Noto Sans TC", sans-serif;
       .excerpt {
-        color: gray;
+        color: rgb(160, 160, 160);
+      }
+      h3 {
+        line-height: 35px;
       }
       a {
-        color: black;
+        color: rgb(97, 97, 97);
         text-decoration: none;
         transition: all 0.3s ease;
       }
@@ -48,7 +52,11 @@
 @media only screen and (max-width: 767px) {
   #home {
     .col-sm-6 {
-      padding: 0 0 40px 0;
+      padding: 0 10px 40px 10px;
+    }
+    h3 {
+      font-size: 20px;
+      line-height: 22px;
     }
   }
 }
