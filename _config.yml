@@ -24,5 +24,5 @@ plugins:
   - jekyll-seo-tag
   - jekyll-paginate
 
-paginate: 2
+paginate: 10
 paginate_path: "/news/page:num/"

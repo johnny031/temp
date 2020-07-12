@@ -32,6 +32,11 @@ $(document).ready(function () {
   if (window.location.pathname == "/") {
     $("#breadcrumb").hide();
   }
+  //hide repeated breadcrumb route on paginate page (eg: news)
+  if ($(".route").html() === $("#breadcrumb_last").html()) {
+    $(".route").hide();
+    $(".prompt").first().hide();
+  }
 });
 $(window).scroll(function () {
   let scroll = $(window).scrollTop();
