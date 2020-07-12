@@ -6,7 +6,7 @@
     width: 100%;
   }
   h1 {
-    font-family: "Armor Mincho";
+    font-family: "cwTeXFangSong", serif !important;
     font-weight: bold;
     color: #1a6584;
     border-bottom: 2px solid #1a6584;
@@ -17,7 +17,7 @@
   ul {
     padding: 0 25px 0 40px;
     li {
-      font-family: "GenSenRounded";
+      font-family: "Noto Sans TC", sans-serif;
       .excerpt {
         color: gray;
       }
@@ -38,7 +38,7 @@
   }
   h4 {
     text-align: right;
-    font-family: "GenSenRounded";
+    font-family: "Noto Sans TC", sans-serif;
     padding-right: 30px;
     a {
       text-decoration: none;

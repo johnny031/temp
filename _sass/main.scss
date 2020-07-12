@@ -11,7 +11,7 @@
   background-color: transparent;
   a {
     color: whitesmoke;
-    font-family: "GenSenRounded";
+    font-family: "Noto Sans TC", sans-serif;
     font-weight: 100;
   }
   .icon-bar {
@@ -30,14 +30,14 @@
 #background_top {
   position: relative;
   top: -20px;
-  background-image: url("{{ site.baseurl }}/../../img/city.png");
+  background-image: url("{{ site.baseurl }}/../../img/test.svg");
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center;
   height: 85vh;
 }
 #slogan {
-  font-family: "Armor Mincho";
+  font-family: "cwTeXFangSong", serif !important;
   font-size: 40px;
   color: white;
   #first_line {
@@ -70,7 +70,7 @@ footer {
   background-color: rgb(196, 196, 196);
   padding: 20px;
   h4 {
-    font-family: "GenSenRounded";
+    font-family: "Noto Sans TC", sans-serif;
   }
 }
 .general-heading-line {

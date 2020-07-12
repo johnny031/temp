@@ -2,12 +2,12 @@
   padding-bottom: 30px;
   h1 {
     color: #1a6584;
-    font-family: "Armor Mincho";
+    font-family: "cwTeXFangSong", serif !important;
   }
   .intro {
     color: rgb(110, 110, 110);
     font-size: 18px;
-    font-family: "GenSenRounded";
+    font-family: "Noto Sans TC", sans-serif;
     margin: 0 17vw;
     line-height: 35px;
   }
@@ -21,7 +21,7 @@
       transition: all 0.3s ease;
       h4 {
         color: #1a6584;
-        font-family: "GenSenRounded";
+        font-family: "Noto Sans TC", sans-serif;
         transition: all 0.3s ease;
       }
     }
