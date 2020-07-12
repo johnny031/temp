@@ -24,7 +24,7 @@
 
 #slogan #second_line { position: absolute; left: 50vw; top: 58%; }
 
-#breadcrumb { font-family: "Microsoft JhengHei"; color: #949494; font-size: 13px; padding: 10px 25px 25px 20px; }
+#breadcrumb { font-family: "Microsoft JhengHei"; color: #949494; font-size: 13px; padding: 10px 25px 25px 20px; line-height: 22px; }
 
 #breadcrumb a { text-decoration: none; color: #598a9b; transition: all 0.2s ease; }
 
@@ -70,6 +70,10 @@ footer h4 { font-family: "GenSenRounded"; }
 
 .posts h1, .posts p { font-family: "Microsoft JhengHei"; }
 
+.posts h1 { line-height: normal; }
+
+.posts p { padding: 7px 0; line-height: 30px; }
+
 .posts h1 { font-size: 30px; color: #316588; }
 
 .posts .content { font-size: 20px; }
@@ -98,7 +102,7 @@ footer h4 { font-family: "GenSenRounded"; }
 
 #news .pagination { margin-top: 30px; display: flex; justify-content: center; }
 
-#news .pagination #current, #news .pagination span, #news .pagination a { color: black; width: 30px; height: 30px; font-size: 20px; font-family: "Microsoft JhengHei"; padding: 0 10px; margin: 0 10px; border-radius: 50%; }
+#news .pagination #current, #news .pagination span, #news .pagination a { color: #686868; height: 30px; font-size: 20px; font-family: "Microsoft JhengHei"; padding: 0 10px; margin: 0 10px; border-radius: 50%; }
 
 #news .pagination #current { color: white; font-weight: bold; background-color: #3690b6; }
 
