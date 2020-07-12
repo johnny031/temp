@@ -13,7 +13,7 @@ defaults:
     values:
       layout: "default"
   - scope:
-      path: "_anouncements/"
+      path: ""
       type: "anouncements"
     values:
       layout: "post"
