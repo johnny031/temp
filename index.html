@@ -4,24 +4,6 @@
 <div id="home" class="container-fluid">
   <div class="row">
     <div class="col-sm-6">
-      <h1 class="text-center">最新消息</h1>
-      <div class="border">
-        <ul>
-          {% for post in site.posts limit:3 %}
-          <li>
-            <h3>
-              <a href="{{ site.baseurl }}{{ post.url }}">{{ post.title }}</a>
-            </h3>
-            <span class="excerpt">{{ post.excerpt }}</span>
-          </li>
-          {% endfor %}
-        </ul>
-        <h4>
-          <a href="{{ site.baseurl }}/news/">>>更多資訊</a>
-        </h4>
-      </div>
-    </div>
-    <div class="col-sm-6">
       <h1 class="text-center">公告</h1>
       <div class="border">
         <ul>
@@ -38,6 +20,24 @@
         </ul>
         <h4>
           <a href="{{ site.baseurl }}/anouncements/">>>更多資訊</a>
+        </h4>
+      </div>
+    </div>
+    <div class="col-sm-6">
+      <h1 class="text-center">最新消息</h1>
+      <div class="border">
+        <ul>
+          {% for post in site.posts limit:3 %}
+          <li>
+            <h3>
+              <a href="{{ site.baseurl }}{{ post.url }}">{{ post.title }}</a>
+            </h3>
+            <span class="excerpt">{{ post.excerpt }}</span>
+          </li>
+          {% endfor %}
+        </ul>
+        <h4>
+          <a href="{{ site.baseurl }}/news/">>>更多資訊</a>
         </h4>
       </div>
     </div>
