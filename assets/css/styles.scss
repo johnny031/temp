@@ -1,12 +1,6 @@
 ---
 ---
 
-@import "home";
-@import "posts";
-@import "news";
-@import "about";
-@import "members";
-
 @font-face {
   font-family: "Armor Mincho";
   src: url("../../fonts/Armor_Mincho/SoukouMincho.woff") format("woff"),
@@ -132,3 +126,8 @@ footer {
     display: none !important;
   }
 }
+@import "home";
+@import "posts";
+@import "news";
+@import "about";
+@import "members";
