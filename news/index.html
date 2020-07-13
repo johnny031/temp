@@ -1,9 +1,16 @@
 ---
 title: 最新消息
+pagination:
+  trail:
+    before: 10
+    after: 10
+  enabled: true
+  category: news
+  sort_reverse: true
 ---
 
 <div id="news" class="container-fluid">
-  <h1 class="text-center">最新消息</h1>
+  <h1 class="text-center">{{ page.title }}</h1>
   <div class="news_table">
     <table>
       <tr>
@@ -25,25 +32,28 @@ title: 最新消息
 
   <!-- Pagination links -->
   {% if paginator.total_pages > 1 %}
-  <div class="pagination">
-    {% if paginator.previous_page %}
-    <a href="{{ paginator.previous_page_path | relative_url }}">&laquo; </a>
-    {% else %}
-    <span>&laquo; </span>
-    {% endif %} {% for page in (1..paginator.total_pages) %} {% if page ==
-    paginator.page %}
-    <div id="current">{{ page }}</div>
-    {% elsif page == 1 %}
-    <a href="{{ 'news/' | relative_url }}">{{ page }}</a>
-    {% else %}
-    <a href="{{ site.paginate_path | relative_url | replace: ':num', page }}"
-      >{{ page }}</a
-    >
-    {% endif %} {% endfor %} {% if paginator.next_page %}
-    <a href="{{ paginator.next_page_path | relative_url }}"> &raquo;</a>
-    {% else %}
-    <span> &raquo;</span>
-    {% endif %}
-  </div>
+  <ul class="trail">
+      {% if paginator.previous_page %}
+      <li class="enable">
+          <a href="{{ paginator.previous_page_path | prepend: site.baseurl | replace: '//', '/' }}">&laquo; </a>
+      </li>
+      {% else %}
+      <li><a>&laquo; </a></li>
+      {% endif %}
+      {% if paginator.page_trail %}
+        {% for trail in paginator.page_trail %}
+          <li {% if page.url == trail.path %}class="current"{% endif %} class="enable"> 
+              <a href="{{ trail.path | prepend: site.baseurl | replace: '//', '/' }}">{{ trail.num }}</a>
+          </li>
+        {% endfor %}
+      {% endif %}
+      {% if paginator.next_page %}
+      <li class="enable">
+          <a href="{{ paginator.next_page_path | prepend: site.baseurl | replace: '//', '/' }}"> &raquo;</a>
+      </li>
+      {% else %}
+      <li><a> &raquo;</a></li>
+      {% endif %}
+  </ul>
   {% endif %}
 </div>

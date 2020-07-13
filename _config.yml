@@ -1,4 +1,7 @@
-exclude: [node_modules]
+exclude:
+  - node_modules
+  - Gemfile
+  - Gemfile.lock
 
 sass:
   style: compressed
@@ -18,16 +21,26 @@ defaults:
     values:
       layout: "default"
   - scope:
-      path: ""
-      type: "anouncements"
+      path: "news/_posts"
+      type: "posts"
     values:
-      layout: "post"
+      category: "news"
+  - scope:
+      path: "anouncements/_posts"
+      type: "posts"
+    values:
+      category: "anouncements"
 
 plugins:
   - jekyll-feed
   - jekyll-sitemap
   - jekyll-seo-tag
-  - jekyll-paginate
 
-paginate: 10
-paginate_path: "/news/page:num/"
+gems:
+  - jekyll-paginate-v2
+
+pagination:
+  enabled: true
+  per_page: 10
+  title: ":title"
+  permalink: "/page:num/"

@@ -6,16 +6,14 @@ comment %} posts are like /docs/python/_posts/2016-06-06-foobar.md {% endcomment
 index.html {% endcomment %} {% assign categories = categories | pop %} {% endif
 %} {% assign route="" %}
 <nav id="breadcrumb">
-  <a href="{{ site.baseurl }}{{ '/' | absolute_url }}">首頁</a>
+  <a href="{{ site.baseurl }}/">首頁</a>
   {% for category in categories %}
   <span class="prompt">></span>
   {% assign route = route | append: '/' | append: category %} {% if forloop.last
   %} {% if include.title %}
   <span id="breadcrumb_last">{{include.title}}</span>{% else %}{{ category }}{%
   endif %} {% else %}
-  <a
-    class="route"
-    href="{{ site.baseurl }}{{ route | remove: '_' | absolute_url }}"
+  <a class="route" href="{{ site.baseurl }}{{ route | remove: '_' }}"
     >{{ category }}</a
   >
   {% endif %} {% endfor %}

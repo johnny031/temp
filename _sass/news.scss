@@ -44,34 +44,35 @@
     background-color: rgb(224, 224, 224);
     text-align: center;
   }
-  .pagination {
-    margin-top: 30px;
+  .trail {
     display: flex;
     justify-content: center;
-    #current,
-    span,
-    a {
-      color: rgb(104, 104, 104);
-      height: 30px;
-      font-size: 20px;
-      font-family: "Microsoft JhengHei";
-      padding: 0 10px;
-      margin: 0 10px;
+    list-style-type: none;
+    padding: 20px 0;
+    li,
+    span {
+      margin: 15px;
+      padding: 0 9px;
       border-radius: 50%;
     }
-    #current {
-      color: white;
-      font-weight: bold;
-      background-color: #3690b6;
-    }
     a {
+      font-size: 23px;
+      color: #1a6584;
       text-decoration: none;
-      transition: all 0.2s ease;
+      transition: all 0.3s ease;
     }
-    a:hover {
-      font-weight: bold;
+    .enable:hover {
+      background-color: #72b3cf;
+    }
+    .enable:hover > a {
       color: white;
-      background-color: #98cde4;
+    }
+    .current {
+      pointer-events: none;
+      background-color: #1a6584;
+    }
+    .current > a {
+      color: white;
     }
   }
 }
