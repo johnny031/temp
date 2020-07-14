@@ -22,9 +22,9 @@
   }
 }
 .nav_white {
-  background-color: #316588 !important;
+  background-color: #1f5172 !important;
   opacity: 1;
-  box-shadow: 3px 3px 3px #174c6e;
+  box-shadow: 3px 3px 3px #0a2e44;
   transition: all 1s ease !important;
 }
 #background_top {
@@ -35,6 +35,27 @@
   background-size: cover;
   background-position: center;
   height: 85vh;
+}
+.slide {
+  transition: transform 2s ease-in-out !important;
+  .carousel-inner {
+    .item {
+      -webkit-transition: -webkit-transform 1.2s ease-in-out !important;
+      -o-transition: -o-transform 1.2s ease-in-out !important;
+      transition: transform 1.2s ease-in-out !important;
+      img {
+        width: 100%;
+        min-height: 100vh;
+        max-height: 100vh;
+        object-fit: cover;
+      }
+      .carousel-caption {
+        font-size: 26px;
+        text-shadow: 5px 5px 5px black;
+        margin-bottom: 50px;
+      }
+    }
+  }
 }
 #slogan {
   font-family: "Microsoft JhengHei";
@@ -68,11 +89,20 @@
   }
 }
 footer {
-  background-color: rgb(196, 196, 196);
+  background-color: rgb(214, 214, 214);
   padding: 20px 20px 30px 20px;
   h4 {
     font-family: "Noto Sans TC", sans-serif;
     line-height: 27px;
+    color: rgb(102, 102, 102);
+    a {
+      color: rgb(102, 102, 102);
+      transition: all 0.3s ease;
+    }
+    a:hover {
+      color: #469dc2;
+      text-decoration: none;
+    }
   }
 }
 .general-heading-line {

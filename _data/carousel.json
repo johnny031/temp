@@ -1,0 +1,17 @@
+[
+  {
+    "title": "image1",
+    "caption": "If you are tired, go to sleep",
+    "url": "/assets/img/carousel/images1.jpg"
+  },
+  {
+    "title": "image2",
+    "caption": "Something inspiring is what you are seeing",
+    "url": "/assets/img/carousel/images2.jpg"
+  },
+  {
+    "title": "image3",
+    "caption": "This is a marvelous place",
+    "url": "/assets/img/carousel/images3.jpg"
+  }
+]

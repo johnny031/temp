@@ -12,6 +12,7 @@ $("<img/>")
     $("#background_top").animate({ opacity: 1 }, 1000);
   });
 $(document).ready(function () {
+  jQuery.fn.carousel.Constructor.TRANSITION_DURATION = 1200;
   let scroll = $(window).scrollTop();
   if (scroll > 0) {
     add_nav_white();
