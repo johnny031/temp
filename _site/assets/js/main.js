@@ -4,8 +4,14 @@ function add_nav_white() {
 function rm_nav_white() {
   $(".navbar").removeClass("nav_white");
 }
+//animate background opacity on img loaded
+$("<img/>")
+  .attr("src", "{{ site.baseurl }}/../assets/img/test.png")
+  .on("load", function () {
+    $(this).remove();
+    $("#background_top").animate({ opacity: 1 }, 1000);
+  });
 $(document).ready(function () {
-  $("#background_top").animate({ opacity: 1 }, 1000);
   let scroll = $(window).scrollTop();
   if (scroll > 0) {
     add_nav_white();
