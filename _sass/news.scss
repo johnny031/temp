@@ -52,17 +52,17 @@
     li,
     span {
       margin: 15px;
-      padding: 0 9px;
       border-radius: 50%;
     }
     a {
+      padding: 7px 9px;
       font-size: 23px;
       color: #1a6584;
       text-decoration: none;
       transition: all 0.3s ease;
     }
     .enable:hover {
-      background-color: #72b3cf;
+      background-color: #93c9e0;
     }
     .enable:hover > a {
       color: white;

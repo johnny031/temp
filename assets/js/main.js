@@ -6,7 +6,7 @@ function rm_nav_white() {
 }
 //animate background opacity on img loaded
 $("<img/>")
-  .attr("src", "{{ site.baseurl }}/../assets/img/test.png")
+  .attr("src", "/../assets/img/test.png")
   .on("load", function () {
     $(this).remove();
     $("#background_top").animate({ opacity: 1 }, 1000);
