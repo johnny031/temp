@@ -11,7 +11,14 @@ $("<img/>")
     $(this).remove();
     $("#background_top").animate({ opacity: 1 }, 1000);
   });
+$("<img/>")
+  .attr("src", "/../assets/img/carousel/images1.jpg")
+  .on("load", function () {
+    $(this).remove();
+    $(".item").animate({ opacity: 1 }, 1000);
+  });
 $(document).ready(function () {
+  $(".carousel").animate({ opacity: 1 }, 1000);
   jQuery.fn.carousel.Constructor.TRANSITION_DURATION = 1200;
   let scroll = $(window).scrollTop();
   if (scroll > 0) {

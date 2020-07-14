@@ -43,6 +43,7 @@
       -webkit-transition: -webkit-transform 1.2s ease-in-out !important;
       -o-transition: -o-transform 1.2s ease-in-out !important;
       transition: transform 1.2s ease-in-out !important;
+      opacity: 0;
       img {
         width: 100%;
         min-height: 100vh;
