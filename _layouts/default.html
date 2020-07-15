@@ -23,8 +23,9 @@ layout: compress
         <span id="second_line">全心零距離</span>
       </h2>
     </div>
-    {% endunless %} {% include breadcrumbs.html path=page.path title=page.title
-    %} {{ content }}
+    {% endunless %}
+    <div id="top"></div>
+    {% include breadcrumbs.html path=page.path title=page.title %} {{ content }}
     <footer>
       <div class="container">
         <div class="row">
@@ -51,4 +52,19 @@ layout: compress
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
   <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
   <script src="{{ site.baseurl }}/assets/js/main.js"></script>
+  <script
+    type="text/javascript"
+    src="{{ site.baseurl }}/assets/js/paginathing.min.js"
+  ></script>
+  <script type="text/javascript">
+    jQuery(document).ready(function ($) {
+      $(".news table tbody").paginathing({
+        perPage: 10,
+        insertAfter: "table",
+        pageNumbers: true,
+        firstLast: !0,
+        pageNumbers: 0,
+      });
+    });
+  </script>
 </html>

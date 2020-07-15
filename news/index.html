@@ -1,57 +1,31 @@
 ---
 title: 最新消息
-pagination:
-  enabled: true
-  category: news
-  sort_reverse: true
 ---
 
-<div id="news" class="container-fluid">
+<div class="news container-fluid">
   <h1 class="text-center">{{ page.title }}</h1>
   <div class="news_table">
     <table>
-      <tr>
-        <th>類別</th>
-        <th>日期</th>
-        <th>標題</th>
-      </tr>
-      {% for post in paginator.posts %}
-      <tr>
-        <td class="text-center author_td">{{ post.author }}</td>
-        <td class="text-center date_td">{{ post.date | date: "%Y-%m-%d" }}</td>
-        <td>
-          <a href="{{ site.baseurl }}{{ post.url }}">{{ post.title }}</a>
-        </td>
-      </tr>
-      {% endfor %}
+      <thead>
+        <tr>
+          <th>類別</th>
+          <th>日期</th>
+          <th>標題</th>
+        </tr>
+      </thead>
+      <tbody>
+        {% for post in site.categories.news %}
+        <tr>
+          <td class="text-center author_td">{{ post.author }}</td>
+          <td class="text-center date_td">
+            {{ post.date | date: "%Y-%m-%d" }}
+          </td>
+          <td>
+            <a href="{{ site.baseurl }}{{ post.url }}">{{ post.title }}</a>
+          </td>
+        </tr>
+        {% endfor %}
+      </tbody>
     </table>
   </div>
-
-  <!-- Pagination links -->
-  {% if paginator.total_pages > 1 %}
-  <ul class="trail">
-      {% if paginator.previous_page %}
-      <li class="enable">
-          <a href="{{ paginator.previous_page_path | prepend: site.baseurl | replace: '//', '/' }}">&laquo; </a>
-      </li>
-      {% else %}
-      <li><a>&laquo; </a></li>
-      {% endif %}
-      {% if paginator.page_trail %}
-        {% for trail in paginator.page_trail %}
-          <li {% if page.url == trail.path %}class="current"{% endif %} class="enable"> 
-              <a href="{{ trail.path | prepend: site.baseurl | replace: '//', '/' }}">{{ trail.num }}</a>
-          </li>
-        {% endfor %}
-      {% endif %}
-      {% if paginator.next_page %}
-      <li class="enable">
-          <a href="{{ paginator.next_page_path | prepend: site.baseurl | replace: '//', '/' }}"> &raquo;</a>
-      </li>
-      {% else %}
-      <li><a> &raquo;</a></li>
-      {% endif %}
-  </ul>
-  {% endif %}
 </div>
-

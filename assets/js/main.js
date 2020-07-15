@@ -4,6 +4,9 @@ function add_nav_white() {
 function rm_nav_white() {
   $(".navbar").removeClass("nav_white");
 }
+function scrollToTop() {
+  $("html, body").animate({ scrollTop: $("#top").offset().top }, 0);
+}
 //animate background opacity on img loaded
 $("<img/>")
   .attr("src", "/../assets/img/test.png")
