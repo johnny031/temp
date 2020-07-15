@@ -104,6 +104,12 @@
 <loc>http://localhost:4000/</loc>
 </url>
 <url>
+<loc>http://localhost:4000/news/</loc>
+</url>
+<url>
+<loc>http://localhost:4000/anouncements/</loc>
+</url>
+<url>
 <loc>http://localhost:4000/about/</loc>
 </url>
 <url>
