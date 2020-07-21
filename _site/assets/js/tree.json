@@ -1,0 +1,19 @@
+{
+  "name": "max",
+  "children": [
+    {
+      "name": "123",
+      "children": [
+        { "name": "123" },
+        {
+          "name": "234"
+        },
+        { "name": "345" }
+      ]
+    },
+    {
+      "name": "123",
+      "children": [{ "name": "123" }, { "name": "234" }]
+    }
+  ]
+}

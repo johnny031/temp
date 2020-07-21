@@ -30,10 +30,10 @@ layout: compress
       <div class="container">
         <div class="row">
           <div class="col-md-6 col-sm-3">
-            <img
+            <!-- <img
               src="{{ site.baseurl }}/assets/img/logo_sm.png"
               style="width: 100px; margin: 30px;"
-            />
+            /> -->
           </div>
           <div class="col-md-6 col-sm-9">
             <h4>台灣智慧資通訊學會</h4>
@@ -51,20 +51,9 @@ layout: compress
   </body>
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
   <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
-  <script src="{{ site.baseurl }}/assets/js/main.js"></script>
   <script
     type="text/javascript"
     src="{{ site.baseurl }}/assets/js/paginathing.min.js"
   ></script>
-  <script type="text/javascript">
-    jQuery(document).ready(function ($) {
-      $(".news table tbody").paginathing({
-        perPage: 10,
-        insertAfter: "table",
-        pageNumbers: true,
-        firstLast: !0,
-        pageNumbers: 0,
-      });
-    });
-  </script>
+  <script src="{{ site.baseurl }}/assets/js/main.js"></script>
 </html>
