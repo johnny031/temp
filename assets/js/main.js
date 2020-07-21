@@ -63,3 +63,13 @@ $(window).scroll(function () {
     rm_nav_white();
   }
 });
+//create pagination
+jQuery(document).ready(function ($) {
+  $(".news table tbody").paginathing({
+    perPage: 10,
+    insertAfter: "table",
+    pageNumbers: true,
+    firstLast: !0,
+    pageNumbers: 0,
+  });
+});
