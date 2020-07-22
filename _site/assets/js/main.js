@@ -73,3 +73,7 @@ jQuery(document).ready(function ($) {
     pageNumbers: 0,
   });
 });
+$("#organization a").click(function (event) {
+  let target = $(event.target);
+  target.next(".info").slideToggle();
+});
