@@ -7,6 +7,15 @@ function rm_nav_white() {
 function scrollToTop() {
   $("html, body").animate({ scrollTop: $("#top").offset().top }, 0);
 }
+//load all members images
+for (let i = 1; i < 10; i++) {
+  $("<img/>")[0].src = "/../assets/img/members/session1/director" + i + ".jpg";
+}
+for (let i = 1; i < 4; i++) {
+  $("<img/>")[0].src =
+    "/../assets/img/members/session1/supervisor" + i + ".jpg";
+}
+$("<img/>")[0].src = "/../assets/img/members/session1/secretary1.jpg";
 //animate background opacity on img loaded
 $("<img/>")
   .attr("src", "/../assets/img/test.png")
