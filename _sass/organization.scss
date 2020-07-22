@@ -43,9 +43,13 @@
     background-color: rgb(236, 236, 236);
     margin: 0 auto;
     margin-bottom: 10px;
-    img {
-      border: 1px solid rgb(153, 153, 153);
+    .photo {
+      margin: 0 auto;
+      background-position: center;
+      background-size: cover;
       width: 100px;
+      height: 130px;
+      border: 1px solid rgb(192, 192, 192);
     }
     h5 {
       font-family: "Microsoft JhengHei";
@@ -113,9 +117,11 @@
       width: 92px;
       h5 {
         font-size: 13px;
+        line-height: 18px;
       }
-      img {
+      .photo {
         width: 70px;
+        height: 90px;
       }
     }
   }
