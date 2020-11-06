@@ -2,9 +2,9 @@
   link: /
 - name: 關於我們
   link: /about
-- name: 電子期刊
-  link: /#
-- name: 活動花絮
-  link: /#
+# - name: 電子期刊
+#   link: /#
+# - name: 活動花絮
+#   link: /#
 - name: 入會申請
-  link: /#
+  link: /application

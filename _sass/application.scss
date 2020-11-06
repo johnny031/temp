@@ -1,0 +1,29 @@
+#application {
+  padding-bottom: 70px;
+  h1 {
+    color: #1a6584;
+    font-family: "cwTeXFangSong", serif !important;
+  }
+  p,
+  div,
+  h3 {
+    font-family: PMingLiU;
+  }
+  p,
+  div {
+    font-size: 18px;
+    line-height: 34px;
+  }
+  h3 {
+    padding: 20px 0;
+    font-weight: bold;
+    color: purple;
+  }
+  p {
+    text-indent: -35px;
+    padding-left: 35px;
+  }
+  a {
+    text-decoration: none;
+  }
+}
