@@ -1,9 +1,12 @@
 .navbar {
-  padding: 15px 0;
+  padding: 15px 0 5px 0;
   margin-bottom: -1px !important;
   transition: all 1s ease !important;
+  .navbar-header {
+    padding-bottom: 10px;
+  }
   .navbar-brand {
-    padding: 5px;
+    padding: 2px 0 0 15px;
   }
   .logo_sm {
     display: none;
