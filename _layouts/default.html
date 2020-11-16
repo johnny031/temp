@@ -21,14 +21,15 @@ layout: compress
     {% feed_meta %} {% seo %}
   </head>
   <body>
-    {% include navigation.html %} {% unless page.url == "/" %}
+    {% include navigation.html %}
+     <!-- unless page.url == "/" -->
     <div id="background_top" style="opacity: 0;">
       <h2 id="slogan">
         <span id="first_line">5G新時代 ，</span>
         <span id="second_line">全心零距離</span>
       </h2>
     </div>
-    {% endunless %}
+    <!-- endunless -->
     <div id="top"></div>
     {% include breadcrumbs.html path=page.path title=page.title %} {{ content }}
     <footer>
