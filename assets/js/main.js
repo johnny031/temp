@@ -144,4 +144,5 @@ function changeNewsContent(newsId) {
   `
   );
   $("#news-content").fadeIn("slow");
+  scrollToTop();
 }
