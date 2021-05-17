@@ -1,17 +1,20 @@
 .posts {
   padding-bottom: 40px;
   h1,
+  h2,
   p {
     font-family: "Microsoft JhengHei";
   }
-  h1 {
+  h1,
+  h2 {
     line-height: normal;
   }
   p {
     padding: 7px 0;
     line-height: 30px;
   }
-  h1 {
+  h1,
+  h2 {
     font-size: 30px;
     color: #316588;
   }
@@ -21,7 +24,8 @@
 }
 @media only screen and (max-width: 930px) {
   .posts {
-    h1 {
+    h1,
+    h2 {
       font-size: 25px;
     }
     .content {

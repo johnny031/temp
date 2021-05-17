@@ -1,3 +1,5 @@
+let note;
+let current_note;
 function add_nav_white() {
   $(".navbar").addClass("nav_white");
 }
@@ -63,6 +65,47 @@ $(document).ready(function () {
     $(".route").hide();
     $(".prompt").first().hide();
   }
+
+  //get News data via ajax
+  $.ajax({
+    method: "GET",
+    url: "https://taiict.herokuapp.com/json-data",
+    success: function (data) {
+      note = data;
+      console.log(note);
+    },
+    complete: function () {
+      for (let i = 0; i < note.length; i++) {
+        $("#news_table").append(
+          `
+        <tr>
+          <td class="text-center author_td">` +
+            note[i][1] +
+            `</td>
+          <td class="text-center date_td">` +
+            note[i][2].slice(0, 10) +
+            `</td>
+          <td class="title_td">
+            <a onClick="changeNewsContent(` +
+            note[i][0] +
+            `)">` +
+            note[i][3] +
+            `</a>
+          </td>
+        </tr>
+      `
+        );
+      }
+      //create pagination
+      $(".news table tbody").paginathing({
+        perPage: 10,
+        insertAfter: "table",
+        pageNumbers: true,
+        firstLast: !0,
+        pageNumbers: 0,
+      });
+    },
+  });
 });
 $(window).scroll(function () {
   let scroll = $(window).scrollTop();
@@ -72,17 +115,33 @@ $(window).scroll(function () {
     rm_nav_white();
   }
 });
-//create pagination
-jQuery(document).ready(function ($) {
-  $(".news table tbody").paginathing({
-    perPage: 10,
-    insertAfter: "table",
-    pageNumbers: true,
-    firstLast: !0,
-    pageNumbers: 0,
-  });
-});
 $("#organization a").click(function (event) {
   let target = $(event.target);
   target.next(".info").slideToggle();
 });
+
+function changeNewsContent(newsId) {
+  for (let i = 0; i < note.length; i++) {
+    if (note[i][0] == newsId) {
+      current_note = note[i];
+    }
+  }
+  $("#news-content").empty();
+  $("#news-content").hide();
+  $("#news-content").append(
+    `
+    <h2>` +
+      current_note[3] +
+      `</h2>
+    <p>` +
+      current_note[2] +
+      ` - ` +
+      current_note[1] +
+      `</p>
+    <div class="content">` +
+      current_note[4] +
+      `</div>
+  `
+  );
+  $("#news-content").fadeIn("slow");
+}
