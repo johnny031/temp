@@ -7,7 +7,16 @@ function rm_nav_white() {
   $(".navbar").removeClass("nav_white");
 }
 function scrollToTop() {
-  $("html, body").animate({ scrollTop: $("#top").offset().top }, 0);
+  $("html, body").animate(
+    { scrollTop: $("#news-content").offset().top - 90 },
+    0
+  );
+}
+function scrollToTable() {
+  $("html, body").animate(
+    { scrollTop: $(".news_table").offset().top - 100 },
+    0
+  );
 }
 //load all members images
 for (let i = 1; i < 10; i++) {
@@ -76,7 +85,7 @@ $(document).ready(function () {
     },
     complete: function () {
       for (let i = 0; i < note.length; i++) {
-        $("#news_table").append(
+        $("#news_table").prepend(
           `
         <tr>
           <td class="text-center author_td">` +
