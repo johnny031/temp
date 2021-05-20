@@ -81,10 +81,11 @@ $(document).ready(function () {
     url: "https://taiict.herokuapp.com/json-data",
     success: function (data) {
       note = data;
-      console.log(note);
     },
     complete: function () {
       for (let i = 0; i < note.length; i++) {
+        note[i][1] = tagToPlainText(note[i][1]);
+        note[i][3] = tagToPlainText(note[i][3]);
         $("#news_table").prepend(
           `
         <tr>
@@ -154,4 +155,11 @@ function changeNewsContent(newsId) {
   );
   $("#news-content").fadeIn("slow");
   scrollToTop();
+}
+function tagToPlainText(code) {
+  let text = code
+    .replace(/&/g, "&amp;")
+    .replace(/</g, "&lt;")
+    .replace(/>/g, "&gt;");
+  return text;
 }
