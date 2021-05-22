@@ -138,12 +138,10 @@ function changeNewsContent(newsId) {
   }
   $("#news-content").empty();
   $("#news-content").hide();
-  let img_tag = current_note[6] == "" ? "" : "<img src='https://taiict.herokuapp.com/" +
+  let img_tag = current_note[6] == "" ? "" : "<img id='news_img' src='https://taiict.herokuapp.com/" +
     current_note[5].toString() + "_" +
     current_note[6] + "' style='width: " +
     current_note[7] + "%' />";
-
-  console.log();
   $("#news-content").append(
     `
     < h2 > ` +
