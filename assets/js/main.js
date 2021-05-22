@@ -63,8 +63,8 @@ $(document).ready(function () {
   $route.html() === "about"
     ? $route.html("關於我們")
     : $route.html() === "news"
-    ? $route.html("最新消息")
-    : $route.html("公告");
+      ? $route.html("最新消息")
+      : $route.html("公告");
   //hide breadcrumb at home page
   if (window.location.pathname == "/") {
     $("#breadcrumb").hide();
@@ -90,17 +90,17 @@ $(document).ready(function () {
           `
         <tr>
           <td class="text-center author_td">` +
-            note[i][1] +
-            `</td>
+          note[i][1] +
+          `</td>
           <td class="text-center date_td">` +
-            note[i][2].slice(0, 10) +
-            `</td>
+          note[i][2].slice(0, 10) +
+          `</td>
           <td class="title_td">
             <a onClick="changeNewsContent(` +
-            note[i][0] +
-            `)">` +
-            note[i][3] +
-            `</a>
+          note[i][0] +
+          `)">` +
+          note[i][3] +
+          `</a>
           </td>
         </tr>
       `
@@ -138,19 +138,26 @@ function changeNewsContent(newsId) {
   }
   $("#news-content").empty();
   $("#news-content").hide();
+  let img_tag = current_note[6] == "" ? "" : "<img src='https://taiict.herokuapp.com/" +
+    current_note[5].toString() + "_" +
+    current_note[6] + "' style='width: " +
+    current_note[7] + "%' />";
+
+  console.log();
   $("#news-content").append(
     `
-    <h2>` +
-      current_note[3] +
-      `</h2>
+    < h2 > ` +
+    current_note[3] +
+    `</h2>
     <p>` +
-      current_note[2] +
-      ` - ` +
-      current_note[1] +
-      `</p>
+    current_note[2] +
+    ` - ` +
+    current_note[1] +
+    `</p>
     <div class="content">` +
-      current_note[4] +
-      `</div>
+    current_note[4] +
+    `<br />` + img_tag + `
+    </div>
   `
   );
   $("#news-content").fadeIn("slow");
