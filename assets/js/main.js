@@ -138,13 +138,17 @@ function changeNewsContent(newsId) {
   }
   $("#news-content").empty();
   $("#news-content").hide();
-  let img_tag = current_note[6] == "" ? "" : "<img id='news_img' src='https://taiict.herokuapp.com/" +
-    current_note[5].toString() + "_" +
-    current_note[6] + "' style='width: " +
-    current_note[7] + "%' />";
+  let file_tags = current_note[5].length == 0 ? "" : "<br /><div>附件：</div>";
+  for (let i = 0; i < current_note[5].length; i++) {
+    let file_tag = "<a href='https://taiict.herokuapp.com/" +
+      current_note[5][i][0].toString() + "_" +
+      current_note[5][i][1] + "' target='_blank' download>" +
+      current_note[5][i][1] + "</a><br />";
+    file_tags += file_tag;
+  }
   $("#news-content").append(
     `
-    < h2 > ` +
+    <h2> ` +
     current_note[3] +
     `</h2>
     <p>` +
@@ -154,7 +158,7 @@ function changeNewsContent(newsId) {
     `</p>
     <div class="content">` +
     current_note[4] +
-    `<br />` + img_tag + `
+    `<br />` + file_tags + `
     </div>
   `
   );
