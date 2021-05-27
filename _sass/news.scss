@@ -5,7 +5,7 @@
     color: #1a6584;
     font-weight: bold;
     border-bottom: 2px solid #1a6584;
-    width: 70%;
+    width: 60%;
     margin: 20px auto;
     padding: 10px 0;
   }
@@ -48,6 +48,17 @@
     background-color: rgb(224, 224, 224);
     text-align: center;
   }
+  #news-content {
+    width: 70%;
+    margin: 0 auto;
+    padding: 0.8em 0 2.2em 0;
+  }
+  .content ol {
+    padding-left: 1.2em;
+  }
+  .content li a {
+    text-decoration: none;
+  }
   .pagination-container {
     text-align: center;
     a {
@@ -89,6 +100,16 @@
     table {
       width: 100%;
       font-size: 15px;
+    }
+  }
+}
+@media only screen and (max-width: 500px) {
+  .news {
+    #news-content {
+      width: 100%;
+    }
+    h1 {
+      width: 70%;
     }
   }
 }
