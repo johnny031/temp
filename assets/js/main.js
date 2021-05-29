@@ -74,13 +74,21 @@ $(document).ready(function () {
     $(".route").hide();
     $(".prompt").first().hide();
   }
-
   //get News data via ajax
   $.ajax({
     method: "GET",
     url: "https://taiict.herokuapp.com/json-data",
+    tryCount: 0,
     success: function (data) {
       note = data;
+    },
+    error: function () {
+      this.tryCount++;
+      if (this.tryCount <= 4) {
+        $.ajax(this);
+        return;
+      }
+      return;
     },
     complete: function () {
       for (let i = 0; i < note.length; i++) {
